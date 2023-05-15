@@ -144,7 +144,7 @@ async function showPage(currentPage, pokemon) {
 
     // add pagination buttons
     $('#pagination').empty();
-   
+
     numPages = Math.ceil(pokemon.length / PAGE_SIZE)
     const startI = currentPage - 2 > 0 ? currentPage - 2 : 1;
     const endI = currentPage + 2 < numPages ? currentPage + 2 : numPages;
@@ -169,7 +169,7 @@ async function showPage(currentPage, pokemon) {
             }
         }
 
-        if (10*(currentPage) < pokemon.length) {
+        if (10 * (currentPage) < pokemon.length) {
             $('#pagination').append(`
         <button class="btn btn-primary pageBtn" pageNum="${currentPage + 1}">Next</button>
     `)
@@ -180,7 +180,7 @@ async function showPage(currentPage, pokemon) {
     if (pokemon.length < PAGE_SIZE) {
         size = pokemon.length
     } else if (currentPage * 10 > pokemon.length) {
-        size = pokemon.length - (currentPage-1)*10
+        size = pokemon.length - (currentPage - 1) * 10
     }
     $('#numberPokemons').html(`<h3>Showing ${size} of ${pokemon.length} Pokemons</h3>`)
 }
