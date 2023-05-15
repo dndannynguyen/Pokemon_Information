@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #112755;
+  color: gold;
+}
+
+#pokemon {
+  display: flex;
+  background-color: #112755;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokeCard {
+  color: blue;
+  background-color: rgb(201, 196, 196);
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  background-color: gold !important;
+  color: black !important;
+  border: px solid rgb(156, 174, 54) !important;
+}
+
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.modal-content {
+  color: blue;
+}
+
+#pokemonTypes {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
